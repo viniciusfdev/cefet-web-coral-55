@@ -149,9 +149,15 @@ html, body, #recipiente {
 
 /* EXERCÍCIO 8: deslocamento no siri e peixe */
 #siri {
+  position: relative;
+  left: -10px;
+  top: 17px;
 }
 
 #peixe {
+  position: relative;
+  left: -44px;
+  bottom: 2px;
 }
 
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */

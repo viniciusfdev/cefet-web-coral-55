@@ -88,21 +88,23 @@ html, body, #recipiente {
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
-
+  margin: 10px 10px 10px 0;
 }
 
 #cabecalho-pagina h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 30px;
   color: #e90c0c;
   font-weight: normal;
+  text-align: center;
 }
 
 #cabecalho-pagina h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
   font-weight: normal;
+  text-align: right;
 }
 
 /* EXERCÍCIO 4: cada item do menu */

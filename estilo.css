@@ -3,6 +3,15 @@
 @import "fonts/ravie.css";
 @import "fonts/verdana.css";
 
+/* Exercicio 10 */
+:root {
+  --cor-do-texto: #333;
+  --cor-do-bg1: #4599b2;
+  --cor-do-bg2: #f6f1b2;
+  --cor-do-bg: rgba(255, 255, 255, 0.2);
+  --bg: #fff;
+}
+
 * {
   font-family: Verdana;
 }
@@ -13,7 +22,7 @@ h1 {
 
 
 body {
-  background-color: #fff;
+  background-color: var(--bg);
 }
 
 strong {
@@ -21,13 +30,13 @@ strong {
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+  background-image: linear-gradient(to bottom, var(--cor-do-bg2), var(--cor-do-bg1) 80%);
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
 }
 
 #cardapio {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--cor-do-bg);
   border-top: 1px solid #aac0ae;
   border-bottom: 1px solid #aac0ae;
   border-left: 1px solid #aac0ae;
@@ -35,13 +44,13 @@ strong {
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--cor-do-texto);
   margin-top: 30px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--cor-do-texto);
 }
 
 
@@ -102,7 +111,7 @@ html, body, #recipiente {
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: var(--cor-do-texto);
   font-weight: normal;
   text-align: right;
 }
@@ -170,3 +179,12 @@ html, body, #recipiente {
 /* coloque aqui a media query para sobrescrever o valor
    das custom properties para o modo escuro */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-do-texto: #eee;
+    --cor-do-bg1: rgb(0, 52, 87);
+    --cor-do-bg2: #0e005e;
+    --cor-do-bg: rgba(49, 49, 49, 0.2);
+    --bg: #000;
+  }
+}

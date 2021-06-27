@@ -46,28 +46,42 @@ strong {
 
 
 /* EXERCÍCIO 2: layout da página */
+body {
+  margin: 0;
+}
+
+html, body, #recipiente {
+  min-height: 100vh;
+}
+
 #recipiente {
-  /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  margin: 0 auto;
+  display: grid;
+  width: 646px;
+  grid-template-columns: 154px 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 #cabecalho-pagina {
-
+  display: block;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 #lateral {
-
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
 }
 
 #cardapio {
-
+  display: block;
 }
 
 #rodape-pagina {
-
+  display: block;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 
